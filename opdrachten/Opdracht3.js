@@ -15,6 +15,8 @@ export default function Opdracht3() {
   // OPDRACHT: Geef elke Container een andere kleur
   return (
       <View style={styles.mainContainer}>
+        <View style={styles.boven}></View>
+        <View style={styles.onder}></View>
         {/* Hieronder zie je een manier om text te printen op basis van een waarde uit een variabele */}
         <Text>Ajax is de {ajaxIsDeBesteClubVanNL ? 'beste' : 'slechste'} club van NL</Text>
       </View>
@@ -24,8 +26,16 @@ export default function Opdracht3() {
   const styles = StyleSheet.create({
     mainContainer: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+      backgroundColor: 'yellow',
+      
     },
+    boven:{
+      flex:1,
+      backgroundColor:'red',
+    },
+    onder:{
+      flex:1,
+      backgroundColor:'grey',
+
+    }
   });

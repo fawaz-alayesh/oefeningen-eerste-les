@@ -11,10 +11,10 @@ export default function Opdracht2() {
     // Zie deze EagleDev voor meer info over objecten: https://eagledev.nl/tasks/705 
     // OPDRACHT: print met <Text> componenten de waardes van je object op je scherm
     // OPDRACHT: geef de <Text> componenten een mooie styling
-    let printString = 'Deze string printen we op het scherm.'
+    let persoon = 'Fawaz, 23, Software developer, call of duty'
     return (
       <View style={styles.mainContainer}>
-        <Text>{printString}</Text>
+        <Text>{persoon}</Text>
       </View>
     );
   }
@@ -22,8 +22,7 @@ export default function Opdracht2() {
   const styles = StyleSheet.create({
     mainContainer: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
+      backgroundColor: '#1233',
       justifyContent: 'center',
     },
   });
